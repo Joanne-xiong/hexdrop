@@ -1,23 +1,26 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hex Drop - Play the Puzzle Game Online</title>
+  <title>Hex Drop – Play the Puzzle Game Online</title>
   <meta name="description" content="Play Hex Drop (Hextris) online. Rotate and match hexagons in this exciting puzzle game.">
   <link rel="canonical" href="https://hexdrop.online/" />
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans scroll-smooth">
-
-  <!-- Top Navigation -->
-  <header class="bg-blue-600 text-white shadow-md">
+<body class="bg-gradient-to-b from-blue-100 to-indigo-200 text-gray-800 font-sans">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur shadow-md">
     <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Hex Drop</h1>
+      <h1 class="text-3xl font-extrabold text-indigo-700">Hex Drop</h1>
       <nav class="space-x-6 text-sm font-medium">
-        <a href="#play" class="hover:underline">Play Now</a>
+        <a href="#play" class="text-indigo-600 hover:underline">Play Now</a>
         <a href="#about" class="hover:underline">About</a>
         <a href="#features" class="hover:underline">Features</a>
         <a href="#controls" class="hover:underline">Controls</a>
@@ -25,56 +28,54 @@
     </div>
   </header>
 
-  <main class="max-w-5xl mx-auto px-4 py-10">
-
+  <!-- Main Content -->
+  <main class="max-w-5xl mx-auto px-4 py-12">
     <!-- Game Section -->
-    <section id="play" class="mb-12">
-      <h2 class="text-2xl font-semibold text-blue-600 mb-4">Play Hex Drop</h2>
-      <div class="w-full aspect-video bg-black rounded-lg overflow-hidden shadow-lg">
-        <iframe 
-          src="https://hextris.github.io/hextris/" 
-          title="Hex Drop Game" 
-          frameborder="0" 
-          allowfullscreen 
+    <section id="play" class="mb-16 text-center">
+      <h2 class="text-4xl font-bold text-blue-700 mb-6">Play Hex Drop</h2>
+      <div class="w-full aspect-video bg-black rounded-xl overflow-hidden shadow-xl ring-4 ring-indigo-300">
+        <iframe
+          src="https://hextris.github.io/hextris/"
+          title="Hex Drop Game"
+          frameborder="0"
+          allowfullscreen
           class="w-full h-full">
         </iframe>
       </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="mb-10">
-      <h2 class="text-2xl font-semibold text-blue-600 mb-2">About Hex Drop</h2>
-      <div class="bg-white p-5 rounded-lg shadow text-gray-700">
-        Hex Drop is an addictive and elegant browser puzzle game inspired by Tetris. Rotate and stack falling hexagons to match colors and clear space. How long can you last before the stack overflows?
-      </div>
+    <section id="about" class="mb-16">
+      <h2 class="text-3xl font-bold text-indigo-700 mb-4">About</h2>
+      <p class="text-lg leading-relaxed">Hex Drop is a fast-paced puzzle game where you rotate falling hexagons to match colors. The more you match, the higher your score! Compete with friends and train your brain.</p>
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="mb-10">
-      <h2 class="text-2xl font-semibold text-blue-600 mb-2">Features</h2>
-      <div class="bg-white p-5 rounded-lg shadow text-gray-700 space-y-2">
-        <ul class="list-disc list-inside">
-          <li>Smooth gameplay and responsive controls</li>
-          <li>Minimalist visual style</li>
-          <li>Completely free to play</li>
-          <li>Works on desktop and mobile</li>
-        </ul>
-      </div>
+    <section id="features" class="mb-16">
+      <h2 class="text-3xl font-bold text-indigo-700 mb-4">Features</h2>
+      <ul class="list-disc list-inside text-lg">
+        <li>Fast-paced puzzle gameplay</li>
+        <li>Minimalist graphics, focused fun</li>
+        <li>Play directly in your browser</li>
+        <li>No download required</li>
+      </ul>
     </section>
 
     <!-- Controls Section -->
-    <section id="controls" class="mb-10">
-      <h2 class="text-2xl font-semibold text-blue-600 mb-2">Controls</h2>
-      <div class="bg-white p-5 rounded-lg shadow text-gray-700">
-        Use your keyboard arrow keys to rotate and drop the blocks. On mobile, simply tap the screen to rotate the hexagons.
-      </div>
+    <section id="controls" class="mb-16">
+      <h2 class="text-3xl font-bold text-indigo-700 mb-4">Controls</h2>
+      <ul class="list-disc list-inside text-lg">
+        <li>Left/Right Arrow – Rotate Hexagon</li>
+        <li>Down Arrow – Drop Faster</li>
+        <li>Space – Pause Game</li>
+      </ul>
     </section>
-    
   </main>
 
-  <footer class="bg-gray-100 text-center py-6 text-sm text-gray-500">
-    &copy; 2025 Hexdrop.online — All rights reserved.
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-600 py-8 bg-white/80">
+    <p>© 2025 Hex Drop. All rights reserved.</p>
+    <p>Built by Joanne | Powered by GitHub Pages & Cloudflare</p>
   </footer>
-
 </body>
 </html>
